@@ -71,7 +71,7 @@ export default function Hero() {
           <img
             src={Profile}
             alt="Keerthi Rao"
-            className="relative w-64 h-64 md:w-72 md:h-72 rounded-full object-cover border-4 border-white shadow-xl"
+            className="relative w-64 h-64 md:w-72 md:h-72 rounded-full object-cover object-top border-4 border-white shadow-xl"
           />
         </motion.div>
       </div>
