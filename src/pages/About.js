@@ -36,17 +36,20 @@ export default function About() {
         </h2>
 
         <p className="text-white/80 leading-7 text-sm md:text-base">
-          I’m a Software Engineer with 2+ years of experience building
-          production-ready web and mobile applications. I focus on clean UI,
-          performance, and scalable architecture.
+          I’m a Software Engineer with 3+ years of experience building
+          responsive web and mobile applications with React.js, React Native,
+          JavaScript, and TypeScript. I enjoy creating reusable UI components,
+          dashboards, and API-driven features that are easy to use and maintain.
           <br /><br />
-          I have hands-on experience working with modern JavaScript frameworks,
-          building reusable components, and integrating REST APIs to deliver
-          seamless user experiences.
+          Beyond the frontend, I build full-stack applications with Next.js,
+          PostgreSQL, Prisma ORM, and JWT authentication, and I develop backend
+          services with Java and Spring Boot. I’ve also built AI-powered features
+          using the Google GenAI SDK (Gemini), including a context-aware chat
+          assistant for personal finance.
           <br /><br />
-          I’m passionate about continuous learning, improving system design,
-          and collaborating with cross-functional teams to build reliable,
-          user-focused products.
+          I use AI development tools like Claude, ChatGPT, and GitHub Copilot to
+          debug faster, understand codebases, and plan implementations, and I’m
+          always expanding my full-stack skills.
         </p>
       </motion.div>
     </section>

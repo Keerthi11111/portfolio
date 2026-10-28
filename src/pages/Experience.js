@@ -3,14 +3,16 @@ import { motion } from "framer-motion";
 const experience = [
   {
     role: "Software Engineer Grade-II (SE-II)",
-    company: "DevAppSys IT Solutions Pvt Ltd",
+    company: "Synterra IT Solution Pvt. Ltd.",
     period: "Feb 2025 – Present",
     details: [
-      "Working on SprintVC Admin & Investor dashboards using React.js",
-      "Developing reusable, scalable UI components",
-      "Handling state management, API integrations, and performance optimization",
-      "Working in Agile environment with cross-functional teams",
-      "Contributing to Valura Angular project with enterprise-level UI",
+      "Develop and maintain web application features using React.js and Angular",
+      "Build reusable UI components, responsive layouts, dashboards, and data-driven interfaces",
+      "Integrate REST APIs and handle application state, data rendering, loading states, and error scenarios",
+      "Contribute to the Valura application, including REST API implementation and feature development",
+      "Work on the SprintVC Admin and Investor Dashboard, supporting reporting workflows and administrative functionality",
+      "Troubleshoot defects and improve application usability, reliability, and performance",
+      "Use AI coding assistants to investigate bugs, understand existing codebases, and explore implementation approaches",
     ],
   },
   {
@@ -18,9 +20,10 @@ const experience = [
     company: "Bermer Software, Brahmavara",
     period: "Jun 2023 – Jan 2025",
     details: [
-      "Developed multiple web & mobile applications using React JS and React Native",
-      "Built Matrimonial, Logistics, and Booking applications",
-      "Focused on responsive UI, performance, and clean architecture",
+      "Developed web and mobile application features using React.js and React Native",
+      "Built matrimonial, logistics, and booking applications with reusable UI components and responsive screens",
+      "Integrated REST APIs to support data-driven interfaces and user workflows",
+      "Worked on feature development, debugging, UI improvements, and testing",
     ],
   },
 ];
@@ -31,9 +34,9 @@ export default function Experience() {
       id="experience"
       className="py-24 px-6 md:px-20
                   bg-gradient-to-b
-        from-[#1c3642]
+        from-[#2f4f5f]
         via-[#274754]
-        to-[#2f4f5f]"
+        to-[#1c3642]"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}

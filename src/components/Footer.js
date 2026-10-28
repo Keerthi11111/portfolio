@@ -1,9 +1,10 @@
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import { scrollToSection } from "./Navbar";
 
 export default function Footer() {
   return (
     <footer
-      id="footer"
+      id="contact"
       className="relative overflow-hidden bg-gradient-to-b from-[#355f6d] to-[#0f1b2d] text-white pt-24 pb-8"
     >
       <div className="absolute top-0 left-0 w-full">
@@ -26,18 +27,28 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-xl font-semibold mb-3">
-          Keerthi Rao
+        <h2 className="text-2xl md:text-3xl font-bold mb-3">
+          Let’s <span className="text-[#67d5eb]">work together</span>
         </h2>
+        <p className="text-white/70 mb-6 max-w-xl mx-auto">
+          Open to software engineering opportunities in React.js, Next.js, and
+          full-stack development. Feel free to reach out.
+        </p>
+        <a
+          href="mailto:keerthirao2001@gmail.com"
+          className="inline-flex items-center gap-2 bg-[#00bcd4] text-[#1c3642] px-6 py-3 rounded-xl font-medium hover:bg-[#67d5eb] transition mb-8"
+        >
+          <FaEnvelope aria-hidden="true" /> Email Me
+        </a>
         <div className="text-sm text-white/80 space-y-1 mb-6">
           <p>Email: keerthirao2001@gmail.com</p>
           <p>Phone: +91 6361875024</p>
         </div>
         <nav className="flex flex-wrap justify-center gap-6 text-sm text-white/70 mb-6">
-          <button onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>About</button>
-          <button onClick={() => document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })}>Skills</button>
-          <button onClick={() => document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })}>Experience</button>
-          <button onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}>Projects</button>
+          <button onClick={() => scrollToSection("about")}>About</button>
+          <button onClick={() => scrollToSection("skills")}>Skills</button>
+          <button onClick={() => scrollToSection("experience")}>Experience</button>
+          <button onClick={() => scrollToSection("projects")}>Projects</button>
         </nav>
         <div className="flex flex-col items-center mb-5 gap-3">
           <div className="flex gap-4">
@@ -45,6 +56,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/keerthi-rao-3457511a5"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="border border-white/30 p-2 rounded-md hover:border-[#00bcd4] hover:text-[#00bcd4] transition"
             >
               <FaLinkedinIn size={16} />
@@ -53,6 +65,7 @@ export default function Footer() {
               href="https://github.com/Keerthi11111"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
               className="border border-white/30 p-2 rounded-md hover:border-[#00bcd4] hover:text-[#00bcd4] transition"
             >
               <FaGithub size={16} />
@@ -60,9 +73,9 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-xs text-white/50">
-          © 2026 Keerthi Rao. All rights reserved.
+          © {new Date().getFullYear()} Keerthi Rao. All rights reserved.
         </p>
       </div>
-    </footer >
+    </footer>
   );
 }

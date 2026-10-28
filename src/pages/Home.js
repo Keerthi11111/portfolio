@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Profile from "../asset/image/keerthi.jpg";
 
 export default function Hero() {
+  const reduceMotion = useReducedMotion();
   const scrollToProjects = () => {
     const section = document.getElementById("projects");
     if (!section) return;
@@ -30,11 +31,15 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl font-bold text-white">
             Hi, I’m <span className="text-[#67d5eb]">Keerthi Rao</span>
           </h1>
+          <p className="mt-3 text-lg text-[#00bcd4] font-medium">
+            Software Engineer · React.js · Next.js · Spring Boot
+          </p>
 
           <p className="mt-6 text-white/80 max-w-xl">
-            Software Engineer crafting modern, scalable web and mobile
-            applications using React, React Native, and Angular with a
-            strong focus on clean UI and performance.
+            Software Engineer with 3+ years of experience building responsive
+            web and mobile applications with React.js, Next.js, and React
+            Native, full-stack features with PostgreSQL and Java Spring Boot,
+            and AI-powered experiences with Google Gemini.
           </p>
 
           <div className="mt-8 flex gap-4 flex-wrap">
@@ -58,7 +63,7 @@ export default function Hero() {
 
         <motion.div
           className="relative flex justify-center"
-          animate={{ y: [0, -12, 0] }}
+          animate={reduceMotion ? undefined : { y: [0, -12, 0] }}
           transition={{ repeat: Infinity, duration: 4 }}
         >
           <div className="absolute w-72 h-72 bg-[#00bcd4]/20 rounded-full blur-2xl" />
