@@ -51,7 +51,7 @@ export default function Hero() {
             </button>
 
             <a
-              href="https://drive.google.com/file/d/1iHOREMrkSrTiqTHeGL3T39-P_g9dDqY2/view"
+              href="https://drive.google.com/file/d/1Sb6cvTSusESLm0VH33KkTx_XhAxxVL0x/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-[#67d5eb] text-[#67d5eb] px-6 py-3 rounded-xl hover:bg-[#67d5eb] hover:text-[#2f4f5f]"
